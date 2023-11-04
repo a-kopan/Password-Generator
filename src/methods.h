@@ -28,9 +28,8 @@ int generateRandomNumber(int range) {
 }
 //if at least one sign in a string is a letter or if no input was given, return false
 bool isNumber(string chain) {
-	if(!chain.length()) {
-		return false;
-	}
+	if(!chain.length()) return false;
+	
 	for(char number:chain) {
 		if(!isdigit(number)) {
 			return false;

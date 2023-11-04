@@ -4,8 +4,7 @@ class SignSet{
     bool allowed;
     string chain;
     public:
-        SignSet() {
-        }
+        SignSet() {}
         SignSet(string signs) {
             this->chain = signs;
             this->allowed = false;   

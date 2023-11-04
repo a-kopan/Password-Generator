@@ -28,6 +28,7 @@ int main()
 		std::cin.clear();
 		std::cin >> length_of_password;	
 	}
+	std::cout << "Answer T for true or F for flase:\n";
 	//get which requirements should work for the passwords
 	lower_case.setAllowed(dataIn("Lower case"));
 	upper_case.setAllowed(dataIn("Upper case"));
@@ -65,6 +66,8 @@ int main()
 		}
 		std::cout << i << ". " << password << "\n"; 
 	}
-	
-	std::cin.get();
+
+	//click something for app to close
+	char holder;
+	std::cin >> holder;
 }
